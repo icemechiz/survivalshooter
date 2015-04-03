@@ -3380,6 +3380,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1438288087}
   - 114: {fileID: 1438288086}
+  - 114: {fileID: 1438288089}
+  - 114: {fileID: 1438288088}
   m_Layer: 0
   m_Name: EnemyManager
   m_TagString: Untagged
@@ -3401,7 +3403,8 @@ MonoBehaviour:
   playerHealth: {fileID: 948009604}
   enemy: {fileID: 160034, guid: 0d8081f69eb0f4ece96d149708dcb2e6, type: 2}
   spawnTime: 3
-  spawnPoints: []
+  spawnPoints:
+  - {fileID: 889568180}
 --- !u!4 &1438288087
 Transform:
   m_ObjectHideFlags: 0
@@ -3414,6 +3417,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!114 &1438288088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1438288085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a99222b1e4a384e923ac7e86efc709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 948009604}
+  enemy: {fileID: 951507035}
+  spawnTime: 10
+  spawnPoints:
+  - {fileID: 400000, guid: 6fd694fb865e5524486da2da372b9730, type: 2}
+--- !u!114 &1438288089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1438288085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a99222b1e4a384e923ac7e86efc709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 948009604}
+  enemy: {fileID: 771276644}
+  spawnTime: 3
+  spawnPoints:
+  - {fileID: 400000, guid: 7bca9c2cd581dbb4f971ad087c21f5f9, type: 2}
 --- !u!1 &1441100787
 GameObject:
   m_ObjectHideFlags: 0
